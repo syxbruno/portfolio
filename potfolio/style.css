@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+
+    scroll-behavior: smooth;
+}
+
+#beforeLoading {
+    display: none;
+}
+
+#loadingBody {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: block;
+    border: 9px solid #746afc;
+    border-top: 9px solid transparent;
+    border-radius: 50%;
+
+    animation: loading 1s ease-in-out infinite;
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #746afc;
+    border-radius: 5px;
+}
+
+:root {
+    --cor1: #ffffff;
+    --cor2: #000000;
+    --cor3: #ffffffb4;
+    --cor4: #000000ad;
+
+    --cor5: rgba(255, 255, 255, 0.062);
+}
+
+.tema-dark {
+    --cor1: #000000;
+    --cor2: #ffffff;
+    --cor3: #0000009d;
+    --cor4: #000000ad;
+
+    --cor5: rgba(0, 0, 0, 0.219);
+}
+
+body {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    transition: .5s ease-in-out;
+}
+
+
+
+
+#navBarContainer {
+    max-width: 1280px;
+    margin: auto;
+}
+
+#navBarFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    width: 84%;
+    padding: 40px 8%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s ease-in-out;
+}
+
+header.rolagem {
+    padding: 16px 8%;
+    background-color: var(--cor5);
+    backdrop-filter: blur(15px);
+}
+
+header img {
+    cursor: pointer;
+}
+
+header ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0px 40px;
+}
+
+li > a {
+    text-decoration: none;
+    color: var(--cor3);
+    transition: .25s ease-in-out;
+}
+
+li > a:hover {
+    color: var(--cor1);
+}
+
+
+
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 45vh 8%;
+}
+
+#divApresentacao > p {
+    float: right;
+}
+
+#divShapes {
+    padding: 10px 0px;
+}
+
+#divShapes > img {
+    padding-right: 10px;
+}
+
+#triangulo {
+    transition: .5s ease-in-out;
+}
+#triangulo:hover {
+    transform: translateX(10px);
+}
+
+#quadrado {
+    transition: .5s ease-in-out;
+}
+#quadrado:hover {
+    transform: translateX(10px);
+}
+
+#divApresentacaoLista > ul > li {
+    list-style-type: none;
+    padding: 4px;
+}
+
+
+
+#about {
+    padding: 25vh 8%;
+}
+
+#divAboutMeContainer > div {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+#divAboutMePhoto {
+    float: right;
+    margin-top: 50px;
+    margin-right: 14%;
+} 
+
+#divAboutMe {
+    max-width: 110vh;
+}
+
+#divAboutMe > h2 {
+    margin: 0px 14%;
+}
+
+#divAboutMe > p {
+    margin: 0px 14%;
+    margin-top: 10px;
+}
+
+
+
+
+#skills {
+    padding: 25vh 8%;
+    text-align: center;
+}
+
+#skills ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 40px 20px;
+}
+
+
+
+
+#projects {
+    padding: 15vh 8%;
+    margin-bottom: 30vh;
+}
+
+#divProjects > h2 {
+    padding: 20px;
+}
+
+#divProjects > p {
+    padding: 10vh 8%;
+    text-align: center;
+}
+
+
+
+
+.title {
+    font-size: 20px;
+    color:  #746afc;
+}
