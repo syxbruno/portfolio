@@ -31,7 +31,7 @@
     height: 40px;
     background-color: transparent;
     display: block;
-    border: 9px solid #746afc;
+    border: 9px solid #2ecc71;
     border-top: 9px solid transparent;
     border-radius: 50%;
 
@@ -85,7 +85,7 @@ button {
     margin: 15px;
     border: none;
     border-radius: 7px;
-    background-image: linear-gradient(to right, #3E8BFF 25%, #FF5E84);
+    background-image: linear-gradient(to right, #2ecc71 25%, #aacc2e);
     background-size: 160% 100%;
     color: rgba(255, 255, 255, 0.438);
     transition: .3s ease-in-out;
@@ -114,7 +114,7 @@ button:hover {
     width: 6px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #746afc;
+    background-color: #2ecc71;
     border-radius: 5px;
 }
 
@@ -173,7 +173,7 @@ body {
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: 1;
+    z-index: 100;
     pointer-events: none;
 }
 
@@ -203,6 +203,7 @@ header {
     top: 0;
     left: 0;
     transition: .5s ease-in-out;
+    z-index: 10;
 }
 
 header.rolagem {
@@ -235,7 +236,7 @@ li > a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 45vh 8%;
+    padding: 40vh 8%;
 }
 
 #divApresentacao > p {
@@ -284,7 +285,7 @@ li > a:hover {
     width: 0.3em;
     height: 0.3em;
     border-radius: 50%;
-    background: var(--cor3);
+    background: #2ecc71;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -312,12 +313,31 @@ li > a:hover {
 }
 
 #divAboutMeContainer {
+    position: relative;
     display: flex;
     align-items: center;
 }
 
 #divAboutMePhoto {
+    height: 230px;
     margin-right: 100px;
+    margin-left: 8%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.288);
+    backdrop-filter: blur(2px);
+    z-index: 1;
+}
+
+#myPhoto {
+    border-radius: 10px;
+}
+
+#imageAnime {
+    position: absolute;
+    border-radius: 3px;
+    top: -28px;
+    left: 25px;
+    z-index: 0;
 }
 
 
@@ -340,7 +360,7 @@ li > a:hover {
 
 
 #projects {
-    padding: 20vh 8%;
+    padding: 10vh 8%;
     margin-bottom: 30vh;
 }
 
@@ -359,5 +379,5 @@ li > a:hover {
 
 .title {
     font-size: 20px;
-    color:  #746afc;
+    color:  #2ecc71;
 }
