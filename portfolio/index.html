@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="loading()">
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
     <div id="loadingBody">
         <span id="loading"></span>
     </div>
@@ -18,6 +22,7 @@
                     <picture>
                         <img src="image/sun.png" alt="sun or moon" height="17px" id="sunOrMoon" onclick="trocarImg()">
                     </picture>
+
                     <ul>
                         <li><a href="#home">home</a></li>
                         <li><a href="#about">about</a></li>
@@ -26,9 +31,12 @@
                     </ul>
                 </nav>
             </nav>
+            
         </header>
         <main>
+
             <section id="home">
+
                 <div id="divApresentacao">
                     <div id="divShapes">
                         <img src="image/triangulo.png" alt="image shapes" height="35px" id="triangulo">
@@ -37,41 +45,53 @@
                     <h1>Hello, my name is Bruno</h1>
                     <p>java developer</p>
                 </div>
+
+                <div class="scrollIndicator"></div>
+
                 <div id="divApresentacaoLista">
                     <ul>
-                        <li><a href="mailto:syxbrunoo@gmail.com">syxbrunoo@gmail.com</a></li>
-                        <li><a href="https://www.linkedin.com/in/syxbrunoo/">my linkedin </a></li>
-                        <li><a href="https://github.com/syxbruno">my github</a></li>
+                        <li><a class="mylink" target="_blank" href="mailto:syxbrunoo@gmail.com">syxbrunoo@gmail.com</a></li>
+                        <li><a class="mylink" target="_blank" href="https://www.linkedin.com/in/syxbrunoo/">my linkedin </a></li>
+                        <li><a class="mylink" target="_blank" href="https://github.com/syxbruno">my github</a></li>
                     </ul>
+
+                    <div class="modal" id="modal">
+                        <div class="modal-content">
+                            <p>You will be directed to an external link on this website, can we continue?</p>
+
+                            <button id="confirmButton">yes</button>
+                            <button id="cancelButton">no</button>
+                        </div>
+                    </div>
                 </div>
             </section>
+
             <section id="about">
                 <div id="divAboutMeContainer">
-                    <div id="divAboutMe">
-                        <h2 class="title">about me</h2>
-                        <p>my name is bruno oliveira and i currently study analysis and development of systems. since i can remember, i have always had contact with technology, whether in arcade games or video games and in video and photo editing. this contact made me interested in working with technology and here i am, studying at a university, taking courses on the side and acquiring knowledge in the area of software development. i couldn't be happier.</p>
-                    </div>
                     <div id="divAboutMePhoto">
-                        <picture>
-                            <img src="" alt="a photo of me">
-                        </picture>
+                        <img src="image/mypicture.png" alt="me picture" id="myPhoto" height="300px">
+                    </div>
+
+                    <div id="divAboutMe">
+                        <h2 class="title">ABOUT ME</h2>
+                        <p>my name is bruno oliveira and i currently study analysis and development of systems. since i can remember, i have always had contact with technology, whether in arcade games or video games and in video and photo editing. this contact made me interested in working with technology and here i am, studying at a university, taking courses on the side and acquiring knowledge in the area of software development. i couldn't be happier.</p>
                     </div>
                 </div>
             </section>
+
             <section id="skills">
-                <h2 class="title">skills</h2>
+                <h2 class="title">SKILLS</h2>
                 <div>
                     <ul>
                         <li><a href="#">Java</a></li>
                         <li><a href="#">Aws</a></li>
                         <li><a href="#">Git</a></li>
-                        <li><a href="#">Excel</a></li>
                     </ul>
                 </div>
             </section>
             <section id="projects">
                 <div id="divProjects">
-                    <h2 class="title">projects</h2>
+                    <h2 class="title">PROJECTS</h2>
                     <p>this section does not have any projects, it will be added as soon as a project is completed.</p>
                 </div>
             </section>

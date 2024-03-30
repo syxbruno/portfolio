@@ -10,6 +10,10 @@
     scroll-behavior: smooth;
 }
 
+
+
+
+
 #beforeLoading {
     display: none;
 }
@@ -44,6 +48,68 @@
     }
 }
 
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    margin: 20% auto;
+    text-align: center;
+    backdrop-filter: blur(4px);
+}
+
+.modal-content > p {
+    color: white;
+    padding: 10px;
+}
+
+button {
+    height: 25px;
+    width: 60px;
+    padding: 5px;
+    margin: 15px;
+    border: none;
+    border-radius: 7px;
+    background-image: linear-gradient(to right, #3E8BFF 25%, #FF5E84);
+    background-size: 160% 100%;
+    color: rgba(255, 255, 255, 0.438);
+    transition: .3s ease-in-out;
+    animation: animatedGradient 2s infinite alternate;
+}
+
+@keyframes animatedGradient {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 100%;
+    }
+}
+
+button:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -51,6 +117,10 @@
     background-color: #746afc;
     border-radius: 5px;
 }
+
+
+
+
 
 :root {
     --cor1: #ffffff;
@@ -70,11 +140,43 @@
     --cor5: rgba(0, 0, 0, 0.219);
 }
 
+
+
+
+
 body {
     background-color: var(--cor2);
     color: var(--cor1);
     transition: .5s ease-in-out;
 }
+
+
+
+
+
+.cursor-dot {
+    width: 5px;
+    height: 5px;
+    background-color: var(--cor1);
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--cor3);
+}
+
+.cursor-dot,
+.cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}
+
 
 
 
@@ -88,6 +190,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#sunOrMoon {
+    cursor: pointer;
 }
 
 header {
@@ -105,10 +211,6 @@ header.rolagem {
     backdrop-filter: blur(15px);
 }
 
-header img {
-    cursor: pointer;
-}
-
 header ul > li {
     list-style-type: none;
     display: inline-block;
@@ -124,6 +226,7 @@ li > a {
 li > a:hover {
     color: var(--cor1);
 }
+
 
 
 
@@ -166,42 +269,63 @@ li > a:hover {
     padding: 4px;
 }
 
+.scrollIndicator {
+    top: 30vh;
+    width: 1.4em;
+    height: 2.6em;
+    border: 2px solid var(--cor1);
+    border-radius: 30px;
+    position: relative;
+    z-index: -1;
+}
+
+.scrollIndicator::before {
+    content: '';
+    width: 0.3em;
+    height: 0.3em;
+    border-radius: 50%;
+    background: var(--cor3);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 1.1s infinite;
+}
+
+@keyframes scroll {
+    0% {
+        bottom: 70%;
+        opacity: 1;
+    }
+
+    100% {
+        bottom: 10%;
+        opacity: 0;
+    }
+}
+
+
+
 
 
 #about {
-    padding: 25vh 8%;
+    padding: 20vh 8%;
 }
 
-#divAboutMeContainer > div {
-    display: inline-block;
-    justify-content: center;
+#divAboutMeContainer {
+    display: flex;
     align-items: center;
 }
 
 #divAboutMePhoto {
-    float: right;
-    margin-top: 50px;
-    margin-right: 14%;
-} 
-
-#divAboutMe {
-    max-width: 110vh;
+    margin-right: 100px;
 }
 
-#divAboutMe > h2 {
-    margin: 0px 14%;
-}
-
-#divAboutMe > p {
-    margin: 0px 14%;
-    margin-top: 10px;
-}
 
 
 
 
 #skills {
-    padding: 25vh 8%;
+    padding: 20vh 8%;
     text-align: center;
 }
 
@@ -214,8 +338,9 @@ li > a:hover {
 
 
 
+
 #projects {
-    padding: 15vh 8%;
+    padding: 20vh 8%;
     margin-bottom: 30vh;
 }
 
@@ -227,6 +352,7 @@ li > a:hover {
     padding: 10vh 8%;
     text-align: center;
 }
+
 
 
 
