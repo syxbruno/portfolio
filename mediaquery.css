@@ -2,6 +2,11 @@
 
 @media screen and (max-width: 680px) {
 
+    .cursor-dot,
+    .cursor-outline {
+        display: none;
+    }
+
     header {
         position: absolute;
         width: 40px;
