@@ -174,7 +174,7 @@ body {
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    z-index: 100;
+    z-index: 1000;
     pointer-events: none;
 }
 
@@ -246,6 +246,7 @@ li > a:hover {
     align-items: center;
     justify-content: space-around;
     padding: 40vh 8%;
+    margin-bottom: 10%;
 }
 
 #divApresentacao > p {
@@ -318,7 +319,13 @@ li > a:hover {
 
 
 #about {
-    padding: 20vh 8%;
+    padding: 0px 8%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#divAboutMe {
+    margin-bottom: 10%;
 }
 
 #divAboutMeContainer {
@@ -342,8 +349,9 @@ li > a:hover {
 }
 
 #myPhoto {
-    float: right;
-    transform: translate(-40px, -31vh);
+    position: relative;
+    top: -85%;
+    left: 18%;
     border-radius: 10px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.288);
@@ -351,17 +359,15 @@ li > a:hover {
     z-index: 1;
 }
 
-#arrowIos {
-    display: none;
-}
-
 
 
 
 
 #skills {
-    padding: 20vh 8%;
+    padding: 0px 8%;
     text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 #skills ul > li {
@@ -375,8 +381,9 @@ li > a:hover {
 
 
 #projects {
-    padding: 10vh 8%;
-    margin-bottom: 30vh;
+    padding: 0px 8%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 #divProjects > h2 {
