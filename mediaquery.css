@@ -22,6 +22,15 @@
         display: none;
     }
 
+    
+
+
+
+    main {
+        position: relative;
+        right: 1%;
+    }
+
 
 
 
@@ -55,14 +64,5 @@
         position: relative;
         top: -90%;
         left: 6%;
-    }
-
-
-
-
-
-    #skills {
-        position: relative;
-        right: 1%;
     }
 }
