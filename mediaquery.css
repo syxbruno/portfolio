@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 680px) {
+@media (max-width: 608px) {
 
     .cursor-dot,
     .cursor-outline {
@@ -41,8 +41,8 @@
     }
 
     #divAboutMe {
-        margin: auto;
         margin-top: 15%;
+        margin-right: 1%;
     }
 
     #imageAnime {
@@ -54,6 +54,6 @@
     #myPhoto {
         position: relative;
         top: -90%;
-        left: 8%;
+        left: 6%;
     }
 }
