@@ -10,12 +10,12 @@ window.addEventListener('scroll', function(){
 
 let sunOrMoon = document.getElementById('sunOrMoon');
 
-sunOrMoon.onclick = function() {
+function trocarImg() {
     document.body.classList.toggle("tema-dark");
     if (document.body.classList.contains("tema-dark")) {
         sunOrMoon.src = "image/moon.png";
     } else {
-        sunOrMoon.src = "image/sun.png"
+        sunOrMoon.src = "image/sun.png";
     }
 }
 
@@ -23,7 +23,7 @@ sunOrMoon.onclick = function() {
 
 
 
-var links = document.querySelectorAll('.mylink');
+var links = document.querySelectorAll('#mylinkone, #mylinktwo, #mylinktree');
 
 links.forEach(function(link) {
     link.addEventListener('click', function(event) {
@@ -33,22 +33,25 @@ links.forEach(function(link) {
     });
 });
 
-function showConfirmationModal(href) {
-    document.getElementById('modal').style.display = 'block';
-    
-    document.getElementById('confirmButton').addEventListener('click', function() {
-        window.open(href, '_blank');
-        hideConfirmationModal();
-    });
+document.getElementById('confirmButton').addEventListener('click', function() {
+    var href = document.getElementById('modal').getAttribute('data-href');
+    window.open(href, '_blank');
+    hideConfirmationModal();
+});
 
-    document.getElementById('cancelButton').addEventListener('click', function() {
-        hideConfirmationModal();
-    });
+document.getElementById('cancelButton').addEventListener('click', function() {
+    hideConfirmationModal();
+});
+
+function showConfirmationModal(href) {
+    document.getElementById('modal').setAttribute('data-href', href);
+    document.getElementById('modal').style.display = 'block';
 }
 
 function hideConfirmationModal() {
     document.getElementById('modal').style.display = 'none';
 }
+
 
 
 

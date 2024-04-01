@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link class="refreshStyleSheet" rel="stylesheet" href="mediaquery.css">
 </head>
 <body onload="loading()">
 
@@ -19,16 +20,17 @@
         <header id="header">
             <nav id="navBarContainer">
                 <nav id="navBarFlex">
-                    <picture>
-                        <img src="image/sun.png" alt="sun or moon" height="17px" id="sunOrMoon" onclick="trocarImg()">
-                    </picture>
 
-                    <ul>
-                        <li><a href="#home">home</a></li>
-                        <li><a href="#about">about</a></li>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#projects">projects</a></li>
-                    </ul>
+                    <img src="image/sun.png" alt="sun or moon" height="17px" id="sunOrMoon" onclick="trocarImg()">
+
+                    <nav id="itens">
+                        <ul>
+                            <li><a class="refreshLink" href="#home">home</a></li>
+                            <li><a class="refreshLink" href="#about">about</a></li>
+                            <li><a class="refreshLink" href="#skills">skills</a></li>
+                            <li><a class="refreshLink" href="#projects">projects</a></li>
+                        </ul>
+                    </nav>
                 </nav>
             </nav>
             
@@ -50,9 +52,9 @@
 
                 <div id="divApresentacaoLista">
                     <ul>
-                        <li><a class="mylink" target="_blank" href="mailto:syxbrunoo@gmail.com">syxbrunoo@gmail.com</a></li>
-                        <li><a class="mylink" target="_blank" href="https://www.linkedin.com/in/syxbrunoo/">my linkedin </a></li>
-                        <li><a class="mylink" target="_blank" href="https://github.com/syxbruno">my github</a></li>
+                        <li><a id="mylinkone" target="_blank" href="mailto:syxbrunoo@gmail.com">syxbrunoo@gmail.com</a></li>
+                        <li><a id="mylinktwo" target="_blank" href="https://www.linkedin.com/in/syxbrunoo/">my linkedin</a></li>
+                        <li><a id="mylinktree" target="_blank" href="https://github.com/syxbruno">my github</a></li>
                     </ul>
 
                     <div class="modal" id="modal">
@@ -69,10 +71,10 @@
             <section id="about">
                 <div id="divAboutMeContainer">
                     <div id="divAboutMePhoto">
+                        <img id="imageAnime" src="image/animeimage.jpg" alt="anime image" height="220px">
+
                         <img src="image/mypicture.png" alt="me picture" id="myPhoto" height="230px">
                     </div>
-
-                    <img id="imageAnime" src="image/animeimage.jpg" alt="anime image" height="220px">
 
                     <div id="divAboutMe">
                         <h2 class="title">ABOUT ME</h2>

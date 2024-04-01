@@ -1,5 +1,60 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 450px) {
-    
+@media screen and (max-width: 680px) {
+
+    header {
+        position: absolute;
+        width: 40px;
+        left: 39%;
+    }
+
+    header.rolagem {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+    }
+
+    #itens {
+        display: none;
+    }
+
+
+
+
+
+    #home {
+        padding-right: 10%;
+    }
+
+
+
+
+
+    #divAboutMeContainer {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #divAboutMePhoto {
+        width: 100px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(15vh, -25vh)
+    }
+
+    #myPhoto {
+        transform: translate(-204px, 20px);
+    }
+
+
+
+
+
+    #skills {
+        padding-top: 0;
+    }
 }

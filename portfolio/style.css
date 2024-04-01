@@ -181,6 +181,10 @@ body {
 
 
 
+#iten {
+    display: block;
+}
+
 #navBarContainer {
     max-width: 1280px;
     margin: auto;
@@ -194,6 +198,10 @@ body {
 
 #sunOrMoon {
     cursor: pointer;
+}
+
+#iconMenu {
+    display: none;
 }
 
 header {
@@ -313,31 +321,37 @@ li > a:hover {
 }
 
 #divAboutMeContainer {
-    position: relative;
     display: flex;
     align-items: center;
 }
 
 #divAboutMePhoto {
     height: 230px;
-    margin-right: 100px;
-    margin-left: 8%;
+    margin-left: 5%;
+    margin-right: 60px;
+    z-index: 1;
+}
+
+#imageAnime {
+    position: relative;
+    border-radius: 3px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#myPhoto {
+    float: right;
+    transform: translate(-40px, -31vh);
+    border-radius: 10px;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.288);
     backdrop-filter: blur(2px);
     z-index: 1;
 }
 
-#myPhoto {
-    border-radius: 10px;
-}
-
-#imageAnime {
-    position: absolute;
-    border-radius: 3px;
-    top: -28px;
-    left: 25px;
-    z-index: 0;
+#arrowIos {
+    display: none;
 }
 
 
