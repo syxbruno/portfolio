@@ -10,7 +10,7 @@
     header {
         position: absolute;
         width: auto;
-        left: 40%;
+        left: 0%;
     }
 
     header.rolagem {
@@ -20,6 +20,15 @@
 
     #itens {
         display: none;
+    }
+
+
+
+
+
+    main {
+        position: relative;
+        margin-right: 1%;
     }
 
 
