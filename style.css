@@ -8,6 +8,7 @@
     font-size: 14px;
 
     scroll-behavior: smooth;
+    scroll-margin: 150px;
 }
 
 
@@ -31,7 +32,7 @@
     height: 40px;
     background-color: transparent;
     display: block;
-    border: 9px solid #2ecc71;
+    border: 9px solid #5271FF;
     border-top: 9px solid transparent;
     border-radius: 50%;
 
@@ -86,7 +87,7 @@ button {
     margin: 15px;
     border: none;
     border-radius: 7px;
-    background-image: linear-gradient(to right, #2ecc71 25%, #aacc2e);
+    background-image: linear-gradient(to right, #8d2ecc 25%, #5271FF);
     background-size: 160% 100%;
     color: rgba(255, 255, 255, 0.438);
     transition: .3s ease-in-out;
@@ -115,7 +116,7 @@ button:hover {
     width: 6px;
 }
 ::-webkit-scrollbar-thumb {
-    background-color: #2ecc71;
+    background-color: #5271FF;
     border-radius: 5px;
 }
 
@@ -124,8 +125,8 @@ button:hover {
 
 
 :root {
-    --cor1: #ffffff;
-    --cor2: #000000;
+    --cor1: #ffffffee;
+    --cor2: #000000ef;
     --cor3: #ffffffb4;
     --cor4: #000000ad;
 
@@ -133,8 +134,8 @@ button:hover {
 }
 
 .tema-dark {
-    --cor1: #000000;
-    --cor2: #ffffff;
+    --cor1: #000000ef;
+    --cor2: #ffffffee;
     --cor3: #0000009d;
     --cor4: #000000ad;
 
@@ -261,10 +262,10 @@ li > a:hover {
     padding-right: 10px;
 }
 
-#triangulo {
+#circle {
     transition: .5s ease-in-out;
 }
-#triangulo:hover {
+#circle:hover {
     transform: translateX(10px);
 }
 
@@ -295,7 +296,7 @@ li > a:hover {
     width: 0.3em;
     height: 0.3em;
     border-radius: 50%;
-    background: #2ecc71;
+    background: #5271FF;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -341,7 +342,7 @@ li > a:hover {
     z-index: 1;
 }
 
-#imageAnime {
+#imageSky {
     position: relative;
     border-radius: 3px;
     top: 0;
@@ -352,9 +353,8 @@ li > a:hover {
 #myPhoto {
     position: relative;
     top: -85%;
-    left: 18%;
-    border-radius: 10px;
-    border-radius: 10px;
+    left: 13%;
+    border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.377);
     backdrop-filter: blur(2px);
     transition: .4s ease-in-out;
@@ -407,5 +407,5 @@ li > a:hover {
 
 .title {
     font-size: 20px;
-    color:  #2ecc71;
+    color:  #5271FF;
 }
