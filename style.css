@@ -225,7 +225,7 @@ header.rolagem {
 header ul > li {
     list-style-type: none;
     display: inline-block;
-    margin: 0px 40px;
+    margin: 0px 30px;
 }
 
 li > a {
