@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>syxbrunoo</title>
+    <link rel="shortcut icon" href="assets/img/circle.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link class="refreshStyleSheet" rel="stylesheet" href="css/mediaquery.css">
+</head>
+<body onload="loading()">
+
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <div id="loadingBody">
+        <span id="loading"></span>
+    </div>
+
+    <div id="beforeLoading">
+        <header id="header">
+            <nav id="navBarContainer">
+                <nav id="navBarFlex">
+
+                    <img src="assets/img/sun.png" alt="sun or moon" height="17px" id="sunOrMoon" onclick="trocarImg()">
+
+                    <nav id="itens">
+                        <ul>
+                            <li><a href="#home">home</a></li>
+                            <li><a href="#about">about</a></li>
+                            <li><a href="#skills">skills</a></li>
+                            <li><a href="#contact">contact</a></li>
+                        </ul>
+                    </nav>
+                </nav>
+            </nav>
+            
+        </header>
+
+        <main>
+            <section id="home">
+
+                <div id="divApresentacao">
+                    <div id="divShapes">
+                        <img src="assets/img/circle.png" alt="image shapes" height="30px" id="circle">
+                        <img src="assets/img/square.png" alt="" height="30px" id="quadrado">
+                    </div>
+                    <h1>Hello, my name is Bruno</h1>
+                    <p>java developer</p>
+                </div>
+
+                <div class="scrollIndicator"></div>
+
+                <div id="divApresentacaoLista">
+                    <button class="myresume" id="mylink" target="_blank" href="https://drive.google.com/drive/folders/1ZQOzIDB5lyNdKxUGfMQCub1CUyNUiIKg?usp=sharing">view resume</button>
+                    <button class="certificates" id="mylink" target="_blank" href="https://drive.google.com/drive/folders/1p0MXNsci6uH4OUFQNnT057pFzcQPm4aN?usp=sharing">view certificates</button>
+
+                    <div class="modal" id="modal">
+                        <div class="modal-content">
+                            <p>You will be directed to an external link on this website, can we continue?</p>
+
+                            <button id="confirmButton">yes</button>
+                            <button id="cancelButton">no</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about">
+                <div id="divAboutMeContainer">
+                    <div id="divAboutMePhoto">
+                        <img src="assets/img/me.jpg" alt="me picture" id="myPhoto" height="230px">
+                    </div>
+
+                    <div id="divAboutMe">
+                        <h2 class="title">ABOUT</h2>
+                        <p>Hello, my name is Bruno. I am a Systems Analysis and Development student at Estácio and have the honor of being a ProUni scholar. During my academic journey, I had the opportunity to be introduced to the Java language, which quickly became my passion. Since then, I have dedicated my studies to specializing in backend development, focusing on Java and the Spring framework. My main objective is to work as a backend developer, applying my knowledge and contributing innovative and efficient solutions. I am always in search of new challenges that allow me to grow professionally and add value to the projects I am involved in. I appreciate the opportunity to share a bit of my history and aspirations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div id="skillsAndProjects">
+                <section id="skills">
+                    <h2 class="title">SKILLS</h2>
+                    <div>
+                        <ul>
+                            <li><a href="#skills">Java</a></li>
+                            <li><a href="#skills">Spring</a></li>
+                            <li><a href="#skills">PostgreSQL</a></li>
+                            <li><a href="#skills">Docker</a></li>
+                            <li><a href="#skills">Git</a></li>
+                        </ul>
+                    </div>
+                </section>
+    
+                <section id="projects">
+                    <div id="divProjects">
+                        <h2 class="title">PROJECTS</h2>
+                        <a id="mylink" href="https://github.com/syxbruno?tab=repositories" style="text-decoration: none; color: inherit;">
+                            <p>View projects.</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <div id="contact">
+                <h2 class="title">CONTACT</h2>
+                <ul>
+                    <li><a id="mylink" target="_blank" href="https://mailto:syxbrunoo@gmail.com">syxbrunoo@gmail.com</a></li>
+                    <li><a id="mylink" target="_blank" href="https://www.linkedin.com/in/syxbrunoo/">linkedin</a></li>
+                    <li><a id="mylink" target="_blank" href="https://github.com/syxbruno">github</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main/portfolio.js"></script>
+</body>
+</html>

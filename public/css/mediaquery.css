@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@media only screen and (max-width: 890px) {
+    .cursor-dot {
+        display: none;
+    }
+
+    .cursor-outline {
+        display: none;
+    }
+
+
+    .modal-content > button {
+    color: white;
+    }
+
+
+    header {
+        display: none;
+    }
+
+    
+    #home {
+        flex-direction: column;
+        padding: 20vh 4%;
+        margin-bottom: 40%;
+    }
+
+    
+    #about {
+        text-align: center;
+        padding: 0 4%;
+        margin-top: 15%;
+        margin-right: 11%;
+        margin-bottom: 15%;
+    }
+
+    #divAboutMeContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #divAboutMePhoto {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    
+    #skillsAndProjects {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    
+    #contact {
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    #contact ul > li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    
+    .myresume, .certificates {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
